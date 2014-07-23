@@ -17,12 +17,17 @@ For each new environment the following software must be installed:
     apt-get install procmail
 
 ## Configuration ##
-If the script files are installed into the `/usr/local/bin/event-capture` directory then the only config changed required is in the s3cmd.cfg file
+If the script files are installed into the `/usr/local/bin/event-capture` directory then the only config changed required is in the s3cmd.cfg and event-capture-s3-upload.sh files
 
 **s3cmd.cfg**
 
 - access_key = 
 - secret_key = 
+ 
+
+**event-capture-s3-upload.sh**
+
+S3_PATH=
 
 ## Running hourly within cron ##
 
