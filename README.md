@@ -21,13 +21,21 @@ If the script files are installed into the `/usr/local/bin/event-capture` direct
 
 **s3cmd.cfg**
 
+Configure the relevant s3 keys for the bucket that needs to store the log data
+
 - access_key = 
 - secret_key = 
  
 
 **event-capture-s3-upload.sh**
 
-S3_PATH=
+The root path to store the log data
+
+- S3_PATH=
+
+**event-capture.logrotate**
+
+Configure the specific log(s) to rotate here
 
 ## Running hourly within cron ##
 
