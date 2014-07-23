@@ -1,0 +1,10 @@
+/data/evcap/evcapRaw.log {
+        missingok
+        rotate 52
+        copytruncate
+        notifempty
+        sharedscripts
+        postrotate
+                /usr/local/bin/event-capture/event-capture-s3-upload.sh /data/evcap/evcapRaw.log &> /tmp/event-capture.rotate.log
+        endscript
+}
