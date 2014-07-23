@@ -1,6 +1,6 @@
 # Logrotate to S3 #
 
-This script used the `logrotate` and `s3cmd` applications to rotate a specific log file and compress and upload to S3
+This script uses the `logrotate` and `s3cmd` applications to rotate a specific log file and compress and upload to S3
 
 ## Pre-requisites ##
 
