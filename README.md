@@ -28,6 +28,10 @@ For each new environment the following software must be installed:
 
 
 ## Configuration ##
+Install all files into the `/usr/local/bin/event-capture` directory
+
+
+## Configuration ##
 If the script files are installed into the `/usr/local/bin/event-capture` directory then the only config changed required is in the s3cmd.cfg and event-capture-s3-upload.sh files
 
 **s3cmd.cfg**
