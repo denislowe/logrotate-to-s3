@@ -27,7 +27,7 @@ For each new environment the following software must be installed:
     sudo mkdir /usr/local/bin/event-capture
 
 
-## Configuration ##
+## Installation ##
 Install all files into the `/usr/local/bin/event-capture` directory
 
 
