@@ -25,7 +25,7 @@ For each new environment the following software must be installed:
 **Script Directory**
 
     sudo mkdir /usr/local/bin/event-capture
-
+    sudo chown -R ec2-user:ec2-user /usr/local/bin/event-capture
 
 ## Installation ##
 Install all files into the `/usr/local/bin/event-capture` directory
