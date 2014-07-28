@@ -16,7 +16,7 @@ For each new environment the following software must be installed:
 
 **lockfile**
 
-    <b>For ubutu</b>
+    <b>For ubuntu</b>
     sudo apt-get install procmail
     
     <b>For AWS Linux</b>
