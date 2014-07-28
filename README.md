@@ -21,6 +21,11 @@ For each new environment the following software must be installed:
     
     <b>For AWS Linux</b>
     sudo yum install procmail
+    
+**Script Directory**
+
+    sudo mkdir /usr/local/bin/event-capture
+
 
 ## Configuration ##
 If the script files are installed into the `/usr/local/bin/event-capture` directory then the only config changed required is in the s3cmd.cfg and event-capture-s3-upload.sh files
