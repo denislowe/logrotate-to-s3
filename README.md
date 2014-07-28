@@ -8,13 +8,19 @@ For each new environment the following software must be installed:
 
 **s3cmd**
 
-    wget -P /usr/local/bin http://sourceforge.net/projects/s3tools/files/s3cmd/1.5.0-beta1/s3cmd-1.5.0-beta1.tar.gz
-    tar -xvf /usr/local/bin/s3cmd-1.5.0-beta1.tar.gz -C /usr/local/bin
-    echo 'S3CMD_HOME=/usr/local/bin/s3cmd-1.5.0-beta1' >> /etc/profile
+    sudo wget -P /usr/local/bin http://sourceforge.net/projects/s3tools/files/s3cmd/1.5.0-beta1/s3cmd-1.5.0-beta1.tar.gz
+    sudo tar -xvf /usr/local/bin/s3cmd-1.5.0-beta1.tar.gz -C /usr/local/bin
+    echo 'S3CMD_HOME=/usr/local/bin/s3cmd-1.5.0-beta1' >> ~/.bashrc
+    echo 'PATH=$PATH:$S3CMD_HOME' >> ~/.bashrc
+    source ~/.bashrc
 
 **lockfile**
 
-    apt-get install procmail
+    <b>For ubutu</b>
+    sudo apt-get install procmail
+    
+    <b>For AWS Linux</b>
+    sudo yum install procmail
 
 ## Configuration ##
 If the script files are installed into the `/usr/local/bin/event-capture` directory then the only config changed required is in the s3cmd.cfg and event-capture-s3-upload.sh files
